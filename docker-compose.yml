@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  cash-register-service:
+    build:
+      context: ./cash_register_service
+    container_name: cash-register-service
+    ports:
+      - "8080:8080"
+    networks:
+      - spring-net
+
+  supermarket-service:
+    build:
+      context: ./supermarket_service
+    container_name: supermarket-service
+    ports:
+      - "8081:8080"
+    networks:
+      - spring-net
+
+networks:
+  spring-net:
+    driver: bridge
