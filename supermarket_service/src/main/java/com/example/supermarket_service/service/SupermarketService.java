@@ -1,7 +1,11 @@
 package com.example.supermarket_service.service;
 
 
+import com.example.supermarket_service.model.DTO.*;
 import com.example.supermarket_service.repository.ManageRepository;
+
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,5 +19,13 @@ public class SupermarketService {
 
     public long getTotalUniqueUsers() {
         return manageRepository.countDistinctUserIds();
+    }
+
+    public List<UserPurchaseCount> getLoyalUsers() {
+        return manageRepository.findLoyalUsers();
+    }
+
+    public List<ProductCount> getTopThreeProducts() {
+        return manageRepository.findTopThreeProductsCustom();
     }
 }
