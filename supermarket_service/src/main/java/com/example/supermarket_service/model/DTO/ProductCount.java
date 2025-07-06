@@ -1,5 +1,12 @@
 package com.example.supermarket_service.model.DTO;
 
+/**
+ * Data Transfer Object representing the count of purchases for a specific product.
+ *
+ * productId: Identifier or name of the product
+ * purchaseCount: Number of times the product was purchased
+ */
+
 public class ProductCount {
     private String productId;
     private long purchaseCount;
