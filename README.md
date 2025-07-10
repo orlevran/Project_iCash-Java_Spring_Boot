@@ -42,8 +42,7 @@ Build Both Microservices:
 
 Run with Docker Compose:
 1. From the root project folder:
-       * docker compose down
-         (Not for the first time)
+       * docker compose down (Not for the first time)
        * docker compose up --build
 
 Test in Postman (Or Insomnia) the following request:
