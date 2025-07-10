@@ -45,7 +45,7 @@ Run with Docker Compose:
 	* docker compose down (Not for the first time)
     * docker compose up --build
 
-Test in Postman (Or Insomnia) the following request:
+Test in Postman (Or Insomnia) the following requests:
    (Note- Some requests are expected to receive a response with an error message)
 
 
