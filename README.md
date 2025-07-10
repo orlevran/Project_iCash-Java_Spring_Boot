@@ -4,7 +4,7 @@ Both services can be run simultaneously using Docker Compose.
 Additionally, a MySQL 8 server is utilized, which was set up and managed through AWS cloud services.
 
 Run the project with Docker-Compose:
-1. Install Docker + Docker Compose inside WSL2 (Ubuntu):\n
+1. Install Docker + Docker Compose inside WSL2 (Ubuntu):
   a. Install prerequisites:
     * sudo apt update
     * sudo apt install ca-certificates curl gnupg lsb-release -y
